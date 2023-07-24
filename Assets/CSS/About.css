@@ -1,0 +1,153 @@
+body{
+    background: #5983dd;
+}
+#About{
+    min-height: 100%; 
+    background-image:linear-gradient(to right, black, darkslategray, gray);
+    padding-bottom: 80px;
+}
+#About h2{
+    font-size: 2rem;
+}
+.about-section h1{
+    padding: 5px;
+    font-size: 2rem;
+}
+.about-section p{
+    padding: 5px;
+    font-size: 1em;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: sticky;
+  justify-content: space-between;
+  padding: 2px;
+
+}
+.card {
+  width: 300px;
+  height: unset;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color:blanchedalmond;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+
+.card img{
+  margin-top: 5px;
+  display: block;
+  margin: auto;
+  object-fit: fill;
+  border-radius: 50%;
+  border-top: 5px solid #def12f ;
+  border-bottom: 5px solid rgb(248, 26, 37);
+  border-left: 5px solid #0650f0;
+  border-right: 5px solid #31ec0b;
+  height: 150px;
+  width: 150px;
+}
+
+.details p{
+margin:auto;
+padding: 5px;
+font: 800;
+font-size: larger;
+color:teal;
+}
+
+.details .name{
+color: #000;
+text-align: center;
+font-size: 1.2rem;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 900;
+}
+
+
+.about-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #5983dd;
+  height: screen;
+  color: white;
+}
+
+.container {
+  padding: 0;
+
+}
+
+.container h2{
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: antiquewhite;
+
+}
+
+/* .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+
+
+.submit-btn {
+  /* border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%; */
+}
+  .submit-btn{
+  background-color: #fd917e;
+  filter: drop-shadow(2px 2px 3px #0003);
+  color: #fff;
+  font-family: "Poppins",sans-serif;
+  font-size: clamp(16px, 1.6vw, 18px);
+  display: block;
+  padding: 12px 25px;
+  margin: 2px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+.submit-btn:hover {
+  transform: scale(1.1, 1.1);
+    background-color: #555;
+}
+
+.submit-btn:active {
+  transform: scale(1.1, 1.1);
+  filter: sepia(0.5);
+}
+
+
+
+@media(max-width: 668px)and(min-width: 220px){
+.card {
+  display: flex;
+  width: 90vw;
+  border-radius: 12px;
+  margin: 0;
+  height: unset;
+  justify-content: center;
+  padding: 50px;
+  background: lightgrey;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+}

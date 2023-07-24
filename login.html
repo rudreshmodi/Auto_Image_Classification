@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+						initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+	<title>Registration Page</title>
+	<link rel="stylesheet" href="./Assets/CSS/login.css">
+    <link rel="stylesheet" href="./Assets/CSS/navbar.css">
+</head>
+
+<body>
+	 <nav id="navbar" class="navigation">
+      <a href="/" class="brand-name">
+        MacroSoft
+      </a>
+      <div 
+        class="navigation-menu">
+        <ul>
+                <li class="btn-group">
+     <a href="./signup.html" style="display: block; position: relative; background-color: black; border-radius: 12px; padding: 10px; color: white; margin: 12px; right: 35px;">Sign up &nbsp;<i class="fa fa-user" style="font-size: 22px;"></i></a>
+     </li>
+        </ul>
+      </div>
+      </nav>
+
+
+
+<div class="login">
+    <form name='form-login' action="index.html">
+
+        <h1>SIGN IN</h1>
+
+        <label for="userName">Email</label>
+        <input type="email" id="userName" placeholder="Username" required>
+
+        <label for="userPw">Password</label>
+        <input type="password" id= "userPw" placeholder="Password" required>
+
+        <div id="remember">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                   style="display: inline-block;">
+            <label>Remember me</label>
+        </div>
+
+        <input id= "login_btn" type="submit" value="Login" onclick="check()">
+
+        <br/>
+       <p style="color:beige; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Create New <a href="./signup.html" style="text-decoration: none; color: blue;font-size: 14px;">Account</a></p>
+    </form>
+
+</div>
+<script src="./Assets/JS/login.js"></script>
+<script src="./Assets/JS/script.js"></script>
+<script>includeHTML();</script>
+ <script>
+        
+//checking
+function check() {
+  var storedName = localStorage.getItem("name");
+  var storedPw = localStorage.getItem("pw");
+
+  var userName = document.getElementById("userName");
+  var userPw = document.getElementById("userPw");
+  var userRemember = document.getElementById("rememberMe");
+
+  if (userName.value == storedName && userPw.value == storedPw) {
+     Window.location.href="index.html";
+  } else {
+    alert("Error on login");
+  }
+}
+
+    </script>
+</body>
+</html>
